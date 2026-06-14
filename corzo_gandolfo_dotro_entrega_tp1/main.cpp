@@ -41,7 +41,7 @@ int main()
                 sigueVivo = true;
                 vida = 100.0;
 
-                cout << "\nCapitan, cual es tu nombre?\n";
+                cout << "\nCapitán, ¿cuál es tu nombre?\n";
                 cin >> nombre;
 
                 cout << "\nPreparando aventura...\n";
@@ -89,16 +89,16 @@ int main()
                 if(opcionJuego == 1)
                 {
                     tieneLinterna = true;
-                    cout << "\nEncuentras una linterna entre restos de un naufragio.\n";
+                    cout << "\nEncontras una linterna entre los restos de un naufragio.\n";
 
-                    cout << "\n1. Buscar mas objetos\n";
+                    cout << "\n1. Buscar más objetos\n";
                     cout << "2. Continuar\n";
                     cin >> opcionJuego;
 
                     if(opcionJuego == 1)
                     {
                         tieneMapa = true;
-                        cout << "\nTambien encuentras un mapa antiguo.\n";
+                        cout << "\nTambién encontras un mapa antiguo.\n";
                     }
                 }
 else if(opcionJuego == 2)
@@ -114,14 +114,14 @@ else if(opcionJuego == 2)
     if(opcionJuego == 1)
     {
         cout << "\nLa luz ilumina una camara oculta.\n";
-        cout << "Sobre un viejo esqueleto encuentras una llave oxidada.\n";
+        cout << "Sobre un viejo esqueleto encontras una llave oxidada.\n";
 
         tieneLlave = true;
     }
     else
     {
         cout << "\nAvanzas lentamente...\n";
-        cout << "\nEscuchas un gruñido detras de ti.\n";
+        cout << "\nEscuchas un gruñido detras de vos.\n";
         cout << "\nUn pirata zombi emerge de las sombras.\n";
 
         cout << R"(
@@ -156,8 +156,8 @@ else if(opcionJuego == 2)
 )";
 
         cout << "\n1. Correr\n";
-        cout << "2. Enfrentarlo\n";
-        cout << "Opcion: ";
+        cout << "2. Enfrentarlo con una espada\n";
+        cout << "Opción: ";
         cin >> opcionJuego;
 
         if(opcionJuego == 1)
@@ -191,7 +191,7 @@ if(sigueVivo == false)
 {
     break;
 }
-                cout << "\nTe diriges hacia el faro...\n";
+                cout << "\nTe dirigis hacia el faro...\n";
 
                 for(int paso = 1; paso <= 10; paso++)
                 {
@@ -234,7 +234,7 @@ if(sigueVivo == false)
 
                 if(tieneLlave == true)
                 {
-                    cout << "\nAbres la puerta del faro.\n";
+                    cout << "\nAbrís la puerta del faro.\n";
                 }
                 else
                 {
@@ -282,7 +282,7 @@ else
 }
                 if(vida <= 0)
                 {
-                    cout << "\nUn pirata zombi te sorprende.\n";
+                    cout << "\nUn pirata zombi te sorprende y te ataca.\n";
                     cout << "\nGAME OVER\n";
                     break;
                 }
@@ -376,9 +376,9 @@ else
         cout << "\nGAME OVER\n";
     }
 }
-cout << "\nPresiona 0 para volver al menu: ";
+cout << "\nPresiona 0 para volver al menú: ";
 cin >> opcionJuego;
-                cout << "\nPresiona 0 para volver al menu: ";
+                cout << "\nPresiona 0 para volver al menú: ";
                 cin >> opcionJuego;
 
                 break;
